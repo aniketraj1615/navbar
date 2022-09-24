@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+     body{
+        overflow: scroll;
+     }
+#navbar{
+    position: relative;
+    
+}
+#navbar::before{
+    content: "";
+    position:absolute;
+    background-color: rgb(5, 5, 5);
+    height: 19%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    height: 75px;
+    
+}
+#logo img{
+    height: 82px;
+    width: 82px;
+}
+#logo{
+display: flex;
+align-items: center;
+color: white;
+}
+#home{
+    display: flex;
+   
+    padding: 0px 9px;
+    list-style: none;
+}
+#home a{
+padding: 12px 10px;
+text-decoration: none;
+color:white;
+font-family: 'Roboto', sans-serif;
+}
+#home a:hover{
+background-color: white;
+color:black;
+border: 2px solid black;
+font-size: large;
+border-radius: 18px;
+}
+#homesection{
+
+    height: 370px; 
+    padding: 3px 28px;
+}
+
+#homesection::before{
+    height: 480px; 
+}
+
+#homesection p{
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+#homesection::before{ 
+    content: "";
+    position: absolute;
+    background: url('homepage.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#homesection h1{
+    color:rgb(254, 251, 249);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    opacity: 2;
+    margin-top: 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#homesection p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    margin-left: 700px;
+    height: 35px;
+    width: 150px;
+    border-radius: 18px;
+}
+.btn:hover{
+    background-colo:white;
+    color:brown;
+    font-size: large;
+    border: 2px solid black;
+    cursor: pointer;
+    
+    
+}
+#services{
+    flex-direction: column;
+}
+#services.box{
+   padding:14px;
+   margin: 2px 0px;
+   margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="chef.png" alt="logo">
+            <ul id="home">
+                <li class="item"><a href="pro2_ser.html">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <section id="homesection">
+        <h1>Welcome to MYKITCHEN</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur amet, laboriosam dicta veniam nobis unde nulla quia impedit asperiores repellat odio neque beatae sapiente eveniet. Non aut corporis aliquid! </P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tenetur ut voluptate consequuntur amet, numquam non autem neque illo sequi!</P>
+        <Button class="btn">ORDER NOW</BUtton>
+    </section>
+    <section id="services">
+        <h1 class="h-primary">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="wheel.png" alt="image">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, alias velit suscipit doloremque id, natus fugit facilis voluptates repellat quidem accusantium perspiciatis. Quae, laborum laudantium.</p>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
